@@ -14,7 +14,7 @@ export default function Home() {
 
   const getRecentAnime = async () => {
     setLoading(false);
-    const res = await axios.get("http://localhost:3000/api/anime/recent", {
+    const res = await axios.get("https://anidesu.vercel.app//api/anime/recent", {
       withCredentials: true,
     });
     setRecentAnime(res.data.data);
@@ -23,16 +23,19 @@ export default function Home() {
 
   const getMostViewedAnime = async () => {
     setLoading(false);
-    const res = await axios.get("http://localhost:3000/api/anime/recent?order_by=most_viewed", {
-      withCredentials: true,
-    });
+    const res = await axios.get(
+      "https://anidesu.vercel.app//api/anime/recent?order_by=most_viewed",
+      {
+        withCredentials: true,
+      }
+    );
     setMostViewedAnime(res.data.data);
     setLoading(true);
   };
 
   const getOngoingAnime = async () => {
     setLoading(false);
-    const res = await axios.get("http://localhost:3000/api/anime/ongoing", {
+    const res = await axios.get("https://anidesu.vercel.app//api/anime/ongoing", {
       withCredentials: true,
     });
     setOngoingAnime(res.data.data);
