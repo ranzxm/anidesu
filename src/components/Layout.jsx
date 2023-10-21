@@ -4,7 +4,7 @@ import { Footer } from "./footer";
 export const Layout = ({ children }) => {
   return (
     <>
-      <div className="app">
+      <div className="app bg-black">
         <nav>
           <Navbar />
         </nav>
