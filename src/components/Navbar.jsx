@@ -9,7 +9,7 @@ export const Navbar = () => {
   const [navHeight, setNavHeight] = useState("h-0");
   return (
     <>
-      <div className="navbar">
+      <div className="navbar text-white">
         <div className="container mx-auto">
           <div className="navbarItem">
             <div className="navbarItemTop py-3 flex items-center justify-between px-4 sm:px-0">

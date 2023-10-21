@@ -53,7 +53,7 @@ export default function Home() {
       <main className="container mx-auto min-h-screen">
         <div className="wrapper flex sm:flex-row flex-col gap-3">
           <div className="main sm:w-8/12 w-full sm:px-0 px-4">
-            <div className="recentAnime">
+            <div className="recentAnime text-white">
               {loading ? <TitleHeader judul={"Anime Terbaru"} /> : ``}
               <div className="listItems grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 gap-2">
                 {recentAnime.slice(0, 6).map((item, index) => (
@@ -68,7 +68,7 @@ export default function Home() {
                 ))}
               </div>
             </div>
-            <div className="ongoingAnime">
+            <div className="ongoingAnime text-white">
               {loading ? <TitleHeader judul={"Anime On-going"} /> : ``}
               <div className="listItems grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 gap-2">
                 {ongoingAnime.slice(0, 6).map((item, index) => (
@@ -83,7 +83,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="sidebar w-full px-4 sm:px-0 sm:w-1/3">
+          <div className="sidebar w-full px-4 sm:px-0 sm:w-1/3 text-white">
             {loading ? <TitleHeader judul={"Dilihat Terbanyak"} /> : ``}
             <div className="listItems flex flex-col gap-6">
               {mostViewedAnime.slice(0, 7).map((item, index) => (
